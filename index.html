@@ -20,20 +20,51 @@
     <header class="page-header">
       <div class="container">
         <nav class="page-nav">
-          <a class="logo" href="./index.html"
-            ><span class="text-italic">SIMPLY </span>CHOCOLATE</a
-          >
-          <ul class="menu">
-            <li class="menu-item">
-              <a class="menu-link" href="./index.html">Home</a>
-            </li>
-            <li class="menu-item">
-              <a class="menu-link" href="#how-made">How it’s made?</a>
-            </li>
-            <li class="menu-item">
-              <a class="menu-link" href="#reviews">Chocolate is loved</a>
-            </li>
-          </ul>
+          <a class="logo" href="./index.html">
+            <p class="logo-text">
+              <span class="text-italic">SIMPLY </span>CHOCOLATE
+            </p>
+            <svg class="logo-icon" width="24" height="24">
+              <use href="./images/icons.svg#icon-chocolate"></use>
+            </svg>
+          </a>
+          <div class="menu-social">
+            <ul class="menu">
+              <li class="menu-item">
+                <a class="menu-link" href="./index.html">Home</a>
+              </li>
+              <li class="menu-item">
+                <a class="menu-link" href="#how-made">How it’s made?</a>
+              </li>
+              <li class="menu-item">
+                <a class="menu-link" href="#reviews">Chocolate is loved</a>
+              </li>
+            </ul>
+            <ul class="social">
+              <li class="social-item">
+                <a
+                  class="social-item-link"
+                  href="https://www.instagram.com/"
+                  target="_blank"
+                >
+                  <svg class="social-item-icon" width="24" height="24">
+                    <use href="./images/icons.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-item">
+                <a
+                  class="social-item-link"
+                  href="https://twitter.com/"
+                  target="_blank"
+                >
+                  <svg class="social-item-icon" width="24" height="24">
+                    <use href="./images/icons.svg#icon-twitter"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
         </nav>
       </div>
     </header>
@@ -47,7 +78,18 @@
           <div class="hero-bottom-block">
             <button class="buy-now-btn" type="button">Buy now</button>
             <a class="how-made-link" href="#how-made">How it’s made</a>
-            <a class="scroll-down-link" href="#benefits">scroll down</a>
+            <ul class="scroll-down-block">
+              <li class="scroll-down-item">
+                <a class="scroll-down-link" href="#benefits">scroll down</a>
+              </li>
+              <li class="scroll-down-item">
+                <a class="scroll-down-icon" href="#benefits">
+                  <svg class="scroll-icon" width="22" height="22">
+                    <use href="./images/icons.svg#icon-scroll-pointer"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
           </div>
         </div>
       </section>
@@ -56,6 +98,11 @@
           <h2 class="visually-hidden">Our benefits</h2>
           <ul class="benefits-list">
             <li class="benefits-list-item">
+              <div class="benefits-list-icon">
+                <svg class="benefit-icon" width="32" height="32">
+                  <use href="./images/icons.svg#icon-chocolate-bar"></use>
+                </svg>
+              </div>
               <h3 class="benefits-list-title">Unsurpassed taste</h3>
               <p class="benefits-list-text">
                 Crafted with the finest quality cocoa beans and a dedication to
@@ -65,6 +112,11 @@
               </p>
             </li>
             <li class="benefits-list-item">
+              <div class="benefits-list-icon">
+                <svg class="benefit-icon" width="32" height="32">
+                  <use href="./images/icons.svg#icon-coin"></use>
+                </svg>
+              </div>
               <h3 class="benefits-list-title">Affordable price</h3>
               <p class="benefits-list-text">
                 Indulge in high-quality chocolate without breaking the bank with
@@ -75,6 +127,11 @@
               </p>
             </li>
             <li class="benefits-list-item">
+              <div class="benefits-list-icon">
+                <svg class="benefit-icon" width="32" height="32">
+                  <use href="./images/icons.svg#icon-utensil-spoon"></use>
+                </svg>
+              </div>
               <h3 class="benefits-list-title">Own production</h3>
               <p class="benefits-list-text">
                 We take pride in our own production process, ensuring that every
