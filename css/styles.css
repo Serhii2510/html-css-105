@@ -373,6 +373,8 @@ body {
   padding: 32px 28px;
   border-radius: 15px;
   border: 1px solid #fd9222;
+  position: relative;
+  overflow: hidden;
 }
 
 .ingredients-list-item:nth-child(4n + 1) {
@@ -392,6 +394,73 @@ body {
 
 .ingredients-list-img {
   margin-bottom: 36px;
+}
+
+.overlay {
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 15px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform: translateY(100%);
+  overflow: auto;
+}
+
+.ingredients-list-item:hover .overlay {
+  transform: translateY(0);
+}
+
+.overlay-title {
+  font-weight: 600;
+  font-size: 18px;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  color: #111;
+  margin-bottom: 8px;
+}
+
+.overlay-tags {
+  min-width: 214px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-bottom: 14px;
+}
+
+.overlay-tag-1 {
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 1.2;
+  color: #fff;
+  background-color: #fd9222;
+  border-radius: 35px;
+  padding: 6px 16px;
+  min-width: 81px;
+  height: 24px;
+}
+
+.overlay-tag-2 {
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 1.2;
+  color: #111;
+  background: #fafafa;
+  border: 1px solid #fd9222;
+  border-radius: 35px;
+  padding: 6px 16px;
+  min-width: 93px;
+  height: 24px;
+}
+
+.overlay-text {
+  color: #111;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.28571;
+  letter-spacing: -0.02em;
 }
 
 .ingredients-list-title {
@@ -438,6 +507,17 @@ body {
   font-size: 14px;
   line-height: 1.29;
   letter-spacing: -0.02em;
+  display: flex;
+  gap: 8px;
+}
+
+.how-made-list-item::before {
+  content: '';
+  display: block;
+  min-width: 8px;
+  height: 8px;
+  background-image: url(../images/how-made-list-marker.png);
+  margin-top: 5px;
 }
 
 .how-made-list-item:not(:last-child) {
@@ -449,6 +529,10 @@ body {
 .reviews {
   padding-top: 50px;
   padding-bottom: 100px;
+}
+
+.reviews-section-title {
+  margin-bottom: 91px;
 }
 
 .reviews-list {
@@ -468,9 +552,14 @@ body {
   border-radius: 15px;
   background-color: #ffffff;
   box-shadow: 0px 9.05px 100px 0px rgba(17, 17, 17, 0.03);
+  position: relative;
 }
 
 .reviews-list-avatar {
+  position: absolute;
+  top: -2.5%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   margin-bottom: 18px;
 }
 
@@ -479,7 +568,7 @@ body {
   font-weight: 600;
   line-height: 1.33;
   text-align: center;
-  margin-bottom: 24px;
+  margin-bottom: 20px;
 }
 
 .reviews-list-text {
