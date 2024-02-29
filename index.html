@@ -430,8 +430,138 @@
               </li>
             </ul>
           </nav>
+          <form class="page-footer-subscribe" name="subscribe-form">
+            <label class="subscribe-form-label" for="email"></label>
+            <input
+              class="subscribe-form-input"
+              name="email"
+              type="email"
+              id="email"
+              placeholder="Enter your email"
+            />
+            <button class="subscribe-form-button" type="submit">
+              Subscribe
+            </button>
+          </form>
         </div>
       </div>
     </footer>
+    <div class="backdrop is-open">
+      <div class="review-menu">
+        <button class="review-menu-close-button" type="button">
+          <svg
+            class="review-menu-close-icon"
+            width="28"
+            height="28"
+            aria-label="close icon"
+          >
+            <use href="./images/icons.svg#icon-close"></use>
+          </svg>
+        </button>
+        <h2 class="review-menu-title section-title">
+          LEAVE A REVIEW ABOUT <span class="accent-color">OUR CHOCOLATE</span>
+        </h2>
+        <form class="review-menu-form" name="review-form">
+          <div class="review-menu-form-group">
+            <label class="review-menu-form-label" for="user-name">Name</label>
+            <div class="review-menu-form-input-group">
+              <input
+                class="review-menu-form-input"
+                name="user-name"
+                type="text"
+                id="user-name"
+                autofocus
+              />
+              <svg
+                class="review-menu-form-input-icon"
+                width="24"
+                height="24"
+                aria-label="name icon"
+              >
+                <use href="./images/icons.svg#icon-user"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="review-menu-form-group">
+            <label class="review-menu-form-label" for="user-email">Email</label>
+            <div class="review-menu-form-input-group">
+              <input
+                class="review-menu-form-input"
+                name="user-email"
+                type="email"
+                id="user-email"
+              />
+              <svg
+                class="review-menu-form-input-icon"
+                width="24"
+                height="24"
+                aria-label="email icon"
+              >
+                <use href="./images/icons.svg#icon-email"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="review-menu-form-group">
+            <label class="review-menu-form-label" for="user-phone"
+              >Phone number</label
+            >
+            <div class="review-menu-form-input-group">
+              <input
+                class="review-menu-form-input"
+                name="user-phone"
+                type="tel"
+                id="user-phone"
+              />
+              <svg
+                class="review-menu-form-input-icon"
+                width="24"
+                height="24"
+                aria-label="phone icon"
+              >
+                <use href="./images/icons.svg#icon-phone"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="review-menu-form-group">
+            <label class="review-menu-form-label" for="user-comment"
+              >Comment</label
+            >
+            <textarea
+              class="review-menu-form-textarea"
+              name="user-comment"
+              id="user-comment"
+              3
+              placeholder="Enter text"
+            ></textarea>
+          </div>
+          <div class="review-menu-form-check">
+            <input
+              class="visually-hidden"
+              type="checkbox"
+              name="user-privacy"
+              id="user-privacy"
+              value="true"
+            />
+            <label class="review-menu-form-checkbox" for="user-privacy">
+              <span class="review-menu-form-checkbox-input" id="one">
+                <svg
+                  class="review-menu-form-checkbox-icon"
+                  width="10"
+                  height="10"
+                  aria-label="checkmark icon"
+                >
+                  <use href="./images/icons.svg#icon-checkmark"></use>
+                </svg>
+              </span>
+              I accept the terms and conditions of the&nbsp;
+              <a class="review-menu-form-checkbox-link" href=""
+                >Privacy Policy</a
+              >
+            </label>
+          </div>
+          <button class="review-menu-form-button" type="submit">Send</button>
+        </form>
+      </div>
+    </div>
   </body>
 </html>
