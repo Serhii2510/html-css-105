@@ -215,6 +215,7 @@ body {
   border: none;
   border-radius: 100px;
   margin-right: 14px;
+  transition: background-color 250ms linear, color 250ms linear;
 }
 
 .buy-now-btn:hover,
@@ -238,6 +239,7 @@ body {
   border: 1px solid #ffffff;
   margin-right: auto;
   color: #ffffff;
+  transition: color 250ms linear, border-color 250ms linear;
 }
 
 .how-made-link:hover,
@@ -283,7 +285,6 @@ body {
 
 /* =========== Benefits Section styles =========== */
 .benefits {
-  max-width: 1200px;
   margin-top: 72px;
   margin-bottom: 50px;
   margin-left: auto;
@@ -307,7 +308,7 @@ body {
   width: calc((100% - 176px) / 3);
   position: relative;
 }
-
+/* NOT ADDED BY LECTOR */
 .benefits-list-item:not(:last-child)::after {
   content: '';
   border: 1px solid rgba(255, 255, 255, 0.5);
@@ -324,7 +325,7 @@ body {
   justify-content: center;
   align-items: center;
   border: 1px solid rgba(255, 255, 255, 0.5);
-  border-radius: 365px;
+  border-radius: 50%;
   width: 62px;
   height: 62px;
   margin-bottom: 22px;
@@ -407,6 +408,7 @@ body {
 .overlay {
   padding: 20px;
   background-color: #ffffff;
+  color: #111111;
   border-radius: 15px;
   position: absolute;
   top: 0;
@@ -427,53 +429,40 @@ body {
   font-size: 18px;
   letter-spacing: -0.03em;
   text-transform: uppercase;
-  color: #111;
   margin-bottom: 8px;
 }
 
 .overlay-tags {
-  min-width: 214px;
   display: flex;
-  align-items: center;
   gap: 6px;
   margin-bottom: 14px;
 }
 
-.overlay-tag-1 {
-  font-weight: 400;
+.overlay-tags-item {
   font-size: 10px;
   line-height: 1.2;
+  padding: 6px 16px;
+  border: 1px solid #fd9222;
+  border-radius: 35px;
+}
+
+.overlay-tag-1 {
   color: #fff;
   background-color: #fd9222;
-  border-radius: 35px;
-  padding: 6px 16px;
-  min-width: 81px;
-  height: 24px;
 }
 
 .overlay-tag-2 {
-  font-weight: 400;
-  font-size: 10px;
-  line-height: 1.2;
-  color: #111;
   background: #fafafa;
   border: 1px solid #fd9222;
-  border-radius: 35px;
-  padding: 6px 16px;
-  min-width: 93px;
-  height: 24px;
 }
 
 .overlay-text {
-  color: #111;
-  font-weight: 400;
   font-size: 14px;
-  line-height: 1.28571;
+  line-height: 1.29;
   letter-spacing: -0.02em;
 }
 
 .ingredients-list-title {
-  max-width: 191px;
   font-size: 14px;
   font-weight: 600;
   line-height: 1.29;
