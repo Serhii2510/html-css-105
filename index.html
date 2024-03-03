@@ -458,9 +458,9 @@
             <use href="./images/icons.svg#icon-close"></use>
           </svg>
         </button>
-        <h2 class="review-menu-title section-title">
-          LEAVE A REVIEW ABOUT <span class="accent-color">OUR CHOCOLATE</span>
-        </h2>
+        <p class="review-menu-title">
+          leave a review about <span class="accent-color">our chocolate</span>
+        </p>
         <form class="review-menu-form" name="review-form">
           <div class="review-menu-form-group">
             <label class="review-menu-form-label" for="user-name">Name</label>
@@ -470,6 +470,9 @@
                 name="user-name"
                 type="text"
                 id="user-name"
+                pattern="[a-zA-Zа-яА-ЯіІїЇєЄґҐʼ]+"
+                title="Serhii"
+                required
                 autofocus
               />
               <svg
@@ -490,6 +493,7 @@
                 name="user-email"
                 type="email"
                 id="user-email"
+                required
               />
               <svg
                 class="review-menu-form-input-icon"
@@ -511,6 +515,9 @@
                 name="user-phone"
                 type="tel"
                 id="user-phone"
+                pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
+                title="xxx-xxx-xx-xx"
+                required
               />
               <svg
                 class="review-menu-form-input-icon"
@@ -530,19 +537,19 @@
               class="review-menu-form-textarea"
               name="user-comment"
               id="user-comment"
-              3
               placeholder="Enter text"
+              required
             ></textarea>
           </div>
           <div class="review-menu-form-check">
             <input
-              class="visually-hidden"
+              class="review-menu-form-checkbox visually-hidden"
               type="checkbox"
               name="user-privacy"
               id="user-privacy"
               value="true"
             />
-            <label class="review-menu-form-checkbox" for="user-privacy">
+            <label class="review-menu-form-checkbox-label" for="user-privacy">
               <span class="review-menu-form-checkbox-input" id="one">
                 <svg
                   class="review-menu-form-checkbox-icon"

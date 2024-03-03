@@ -718,6 +718,7 @@ body {
   top: 0;
   width: 100%;
   height: 100%;
+  z-index: 9999;
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
@@ -771,7 +772,12 @@ body {
 
 .review-menu-title {
   max-width: 298px;
-  text-align: left;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.17;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  color: #111111;
   margin-bottom: 40px;
 }
 
@@ -780,7 +786,6 @@ body {
 }
 
 .review-menu-form-label {
-  font-weight: 400;
   font-size: 14px;
   letter-spacing: -0.02em;
   color: rgba(64, 64, 64, 0.3);
@@ -793,16 +798,15 @@ body {
   height: 68px;
   border: 1px solid rgba(17, 17, 17, 0.05);
   border-radius: 13px;
-  padding: 22px 24px;
   padding-left: 62px;
   background-color: transparent;
-  outline: transparent;
   transition: border-color 250ms linear;
   font-size: 18px;
 }
 
 .review-menu-form-input:focus-within {
   border-color: #fd9222;
+  outline: transparent;
 }
 
 .review-menu-form-group {
@@ -813,7 +817,7 @@ body {
   position: absolute;
   left: 24px;
   top: 50%;
-  fill: #fafafa;
+  fill: none;
   stroke: #404040;
   transition: stroke 250ms linear;
 }
@@ -827,52 +831,60 @@ body {
   height: 137px;
   font-size: 18px;
   letter-spacing: -0.02em;
-  color: rgba(64, 64, 64, 0.3);
   border: 1px solid rgba(17, 17, 17, 0.05);
   border-radius: 13px;
   padding: 22px 24px;
   background-color: transparent;
-  outline: transparent;
   resize: none;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.review-menu-form-textarea::placeholder {
+  color: rgba(64, 64, 64, 0.3);
+}
+
 .review-menu-form-textarea:focus-within {
   border-color: #fd9222;
+  outline: transparent;
 }
 
 .review-menu-form-check {
   margin-bottom: 40px;
 }
 
-.review-menu-form-checkbox {
-  font-weight: 400;
+.review-menu-form-checkbox-label {
   font-size: 14px;
   letter-spacing: -0.02em;
   color: rgba(64, 64, 64, 0.6);
 }
 
 .review-menu-form-checkbox-input {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   width: 20px;
   height: 20px;
   border-radius: 6px;
   border: 1px solid rgba(17, 17, 17, 0.14);
+  fill: transparent;
+  margin-right: 12px;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     border 250ms cubic-bezier(0.4, 0, 0.2, 1),
     fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  fill: transparent;
-  margin-right: 12px;
 }
 
-#user-privacy:checked
-  + .review-menu-form-checkbox
+.review-menu-form-checkbox:checked
+  + .review-menu-form-checkbox-label
   .review-menu-form-checkbox-input {
   background-color: #fd9222;
   border: none;
   fill: #f4f4fd;
+}
+
+.review-menu-form-checkbox:focus
+  + .review-menu-form-checkbox-label
+  .review-menu-form-checkbox-input {
+  outline: 2px solid rgba(0, 0, 255, 0.5);
 }
 
 .review-menu-form-checkbox-link {
@@ -885,7 +897,6 @@ body {
   display: block;
   min-width: 117px;
   height: 45px;
-  font-family: 'Montserrat', sans-serif;
   font-weight: 600;
   font-size: 14px;
   color: #ffffff;
