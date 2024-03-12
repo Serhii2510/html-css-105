@@ -22,12 +22,7 @@
         <nav class="page-nav">
           <a class="logo" href="./index.html">
             <span class="text-italic">SIMPLY</span>&nbsp;CHOCOLATE
-            <svg
-              class="logo-icon"
-              width="24"
-              height="24"
-              aria-label="simply chocolate logotype"
-            >
+            <svg class="logo-icon" aria-label="simply chocolate logotype">
               <use href="./images/icons.svg#icon-logo"></use>
             </svg>
           </a>
@@ -43,6 +38,16 @@
             </li>
           </ul>
         </nav>
+        <button class="menu-open-btn" type="button">
+          <svg
+            class="menu-open-btn-icon"
+            width="28"
+            height="28"
+            aria-label="mobile menu open icon"
+          >
+            <use href="./images/icons.svg#icon-burger"></use>
+          </svg>
+        </button>
         <ul class="social">
           <li class="social-item">
             <a
@@ -92,12 +97,7 @@
             <a class="scroll-down-link" href="#benefits">
               scroll down
               <span class="scroll-down-icon-wrapper">
-                <svg
-                  class="scroll-down-icon"
-                  width="22"
-                  height="22"
-                  aria-label="scroll down link"
-                >
+                <svg class="scroll-down-icon" aria-label="scroll down link">
                   <use href="./images/icons.svg#icon-scroll"></use>
                 </svg>
               </span>
@@ -105,6 +105,7 @@
           </div>
         </div>
       </section>
+
       <section class="benefits" id="benefits">
         <div class="container benefits-container">
           <h2 class="visually-hidden">Our benefits</h2>
@@ -170,6 +171,7 @@
           </ul>
         </div>
       </section>
+
       <section class="ingredients">
         <div class="container">
           <h2 class="section-title ingredients-section-title">
@@ -198,13 +200,28 @@
                   milk chocolate is sold in the United States and Europe.
                 </p>
               </div>
-              <img
-                class="ingredients-list-img"
-                src="./images/ingredients/milk-chocolate.png"
-                alt="Pieces of choolate"
-                width="206"
-                height="160"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/ingredients/chocolate-bar-desktop.png    1x,
+                    ./images/ingredients/chocolate-bar-desktop@2x.png 2x
+                  "
+                  media="(min-width: 1168px)"
+                />
+                <source
+                  srcset="
+                    ./images/ingredients/chocolate-bar-mobile.png    1x,
+                    ./images/ingredients/chocolate-bar-mobile@2x.png 2x
+                  "
+                  media="(max-width: 1167px)"
+                />
+
+                <img
+                  class="ingredients-list-img"
+                  src="./images/ingredients/milk-chocolate-mobile.png"
+                  alt="Pieces of choolate"
+                />
+              </picture>
               <h3 class="ingredients-list-title">milk chocolate</h3>
             </li>
             <li class="ingredients-list-item">
@@ -223,13 +240,28 @@
                   immune system.
                 </p>
               </div>
-              <img
-                class="ingredients-list-img"
-                src="./images/ingredients/bottle-of-milk.png"
-                alt="Bottle with milk"
-                width="206"
-                height="160"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/ingredients/milk-desktop.png    1x,
+                    ./images/ingredients/milk-desktop@2x.png 2x
+                  "
+                  media="(min-width: 1168px)"
+                />
+                <source
+                  srcset="
+                    ./images/ingredients/milk-mobile.png    1x,
+                    ./images/ingredients/milk-mobile@2x.png 2x
+                  "
+                  media="(max-width: 1167px)"
+                />
+
+                <img
+                  class="ingredients-list-img"
+                  src="./images/ingredients/milk-mobile.png"
+                  alt="Bottle with milk"
+                />
+              </picture>
               <h3 class="ingredients-list-title">Milk</h3>
             </li>
             <li class="ingredients-list-item">
@@ -248,13 +280,28 @@
                   their own.
                 </p>
               </div>
-              <img
-                class="ingredients-list-img"
-                src="./images/ingredients/hazelnuts.png"
-                alt="Some hazelnuts"
-                width="206"
-                height="160"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/ingredients/nuts-desktop.png    1x,
+                    ./images/ingredients/nuts-desktop@2x.png 2x
+                  "
+                  media="(min-width: 1168px)"
+                />
+                <source
+                  srcset="
+                    ./images/ingredients/nuts-mobile.png    1x,
+                    ./images/ingredients/nuts-mobile@2x.png 2x
+                  "
+                  media="(max-width: 1167px)"
+                />
+
+                <img
+                  class="ingredients-list-img"
+                  src="./images/ingredients/nuts-mobile.png"
+                  alt="Some hazelnuts"
+                />
+              </picture>
               <h3 class="ingredients-list-title">nuts</h3>
             </li>
             <li class="ingredients-list-item">
@@ -275,31 +322,81 @@
                   chocolate is sweeter and more mellow.
                 </p>
               </div>
-              <img
-                class="ingredients-list-img"
-                src="./images/ingredients/chocolate-beans.png"
-                alt="A handful of chocolate beans"
-                width="206"
-                height="160"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/ingredients/beans-desktop.png    1x,
+                    ./images/ingredients/beans-desktop@2x.png 2x
+                  "
+                  media="(min-width: 1168px)"
+                />
+                <source
+                  srcset="
+                    ./images/ingredients/beans-mobile.png    1x,
+                    ./images/ingredients/beans-mobile@2x.png 2x
+                  "
+                  media="(max-width: 1167px)"
+                />
+
+                <img
+                  class="ingredients-list-img"
+                  src="./images/ingredients/beans-mobile.png"
+                  alt="A handful of chocolate beans"
+                />
+              </picture>
               <h3 class="ingredients-list-title">semi - sweet chocolate</h3>
             </li>
           </ul>
         </div>
       </section>
+
       <section class="how-made" id="how-made">
-        <div class="container">
+        <div class="container how-made-container">
           <h2 class="section-title">
             how it’s <span class="accent-color">made?</span>
           </h2>
           <div class="how-made-content-wrapper">
-            <img
-              class="how-made-img"
-              src="./images/making/chocolate-making.png"
-              alt="Producing of chocolate mass"
-              width="600"
-              height="400"
-            />
+            <div class="how-made-img-wrapper">
+              <picture>
+                <source
+                  srcset="
+                    ./images/how-made/how-made-desktop.png    1x,
+                    ./images/how-made/how-made-desktop@2x.png 2x
+                  "
+                  media="(min-width: 1168px)"
+                />
+                <source
+                  srcset="
+                    ./images/how-made/how-made-tablet.png    1x,
+                    ./images/how-made/how-made-tablet@2x.png 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/how-made/how-made-mobile.png    1x,
+                    ./images/how-made/how-made-mobile@2x.png 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <img
+                  class="how-made-img"
+                  src="./images/making/how-made-mobile.png"
+                  alt="Producing of chocolate mass"
+                />
+              </picture>
+              <div class="how-made-img-play">
+                <svg
+                  class="icon-play"
+                  width="14"
+                  height="15"
+                  aria-label="play icon"
+                >
+                  <use href="./images/icons.svg#icon-play"></use>
+                </svg>
+              </div>
+            </div>
+
             <div class="how-made-text-wrapper">
               <h3 class="how-made-title">
                 Try our chocolates today and discover the perfect balance of
@@ -330,7 +427,8 @@
           </div>
         </div>
       </section>
-      <section class="reviews" id="reviews">
+
+      <!-- <section class="reviews" id="reviews">
         <div class="container">
           <h2 class="section-title reviews-section-title">
             <span class="accent-color">chocolate</span> is loved
@@ -383,9 +481,10 @@
           </ul>
           <button class="leave-review-btn" type="button">Leave a review</button>
         </div>
-      </section>
+      </section> -->
     </main>
-    <footer class="page-footer">
+
+    <!-- <footer class="page-footer">
       <div class="container">
         <div class="page-footer-top-block">
           <h2 class="page-footer-title">
@@ -445,8 +544,9 @@
           </form>
         </div>
       </div>
-    </footer>
-    <div class="backdrop is-open">
+    </footer> -->
+
+    <!-- <div class="backdrop is-open">
       <div class="review-menu">
         <button class="review-menu-close-button" type="button">
           <svg
@@ -569,6 +669,6 @@
           <button class="review-menu-form-button" type="submit">Send</button>
         </form>
       </div>
-    </div>
+    </div> -->
   </body>
 </html>
