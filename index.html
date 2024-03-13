@@ -428,64 +428,77 @@
         </div>
       </section>
 
-      <!-- <section class="reviews" id="reviews">
+      <section class="reviews" id="reviews">
         <div class="container">
           <h2 class="section-title reviews-section-title">
             <span class="accent-color">chocolate</span> is loved
           </h2>
-          <ul class="reviews-list list">
-            <li class="reviews-list-item">
-              <img
-                class="reviews-list-avatar"
-                src="./images/reviews/victoria-dobrzhanska-avatar.png"
-                alt="Victoria Dobrzhanska photo"
-                width="80"
-                height="80"
-              />
-              <h3 class="reviews-list-fullname">Victoria Dobrzhanska</h3>
-              <p class="reviews-list-text">
-                I love this chocolate bar. Perfect combination of light crispy
-                wafer, covered in a thin layer chocolate.
-              </p>
-            </li>
-            <li class="reviews-list-item">
-              <img
-                class="reviews-list-avatar"
-                src="./images/reviews/nazar-babenko-avatar.png"
-                alt="Nazar Babenko photo"
-                width="80"
-                height="80"
-              />
-              <h3 class="reviews-list-fullname">Nazar Babenko</h3>
-              <p class="reviews-list-text">
-                This chocolate confection is a delight! A delight! The wafer is
-                light and crisp, the hazelnut cream is smooth, and the chocolate
-                is good.
-              </p>
-            </li>
-            <li class="reviews-list-item">
-              <img
-                class="reviews-list-avatar"
-                src="./images/reviews/olena-kampusch-avatar.png"
-                alt="Olena Kampusch photo"
-                width="80"
-                height="80"
-              />
-              <h3 class="reviews-list-fullname">Olena Kampusch</h3>
-              <p class="reviews-list-text">
-                Chocolate is a family favourite treat. Love the delicious smooth
-                chocolate and the creaminess inside. The wafer is soft but
-                crunchy.
-              </p>
-            </li>
-          </ul>
+          <div class="reviews-slick">
+            <ul class="reviews-list list">
+              <li class="reviews-list-item is-active">
+                <img
+                  class="reviews-list-avatar"
+                  src="./images/reviews/victoria-dobrzhanska-avatar.png"
+                  alt="Victoria Dobrzhanska photo"
+                  width="80"
+                  height="80"
+                />
+                <h3 class="reviews-list-fullname">Victoria Dobrzhanska</h3>
+                <p class="reviews-list-text">
+                  I love this chocolate bar. Perfect combination of light crispy
+                  wafer, covered in a thin layer chocolate.
+                </p>
+              </li>
+              <li class="reviews-list-item">
+                <img
+                  class="reviews-list-avatar"
+                  src="./images/reviews/nazar-babenko-avatar.png"
+                  alt="Nazar Babenko photo"
+                  width="80"
+                  height="80"
+                />
+                <h3 class="reviews-list-fullname">Nazar Babenko</h3>
+                <p class="reviews-list-text">
+                  This chocolate confection is a delight! A delight! The wafer
+                  is light and crisp, the hazelnut cream is smooth, and the
+                  chocolate is good.
+                </p>
+              </li>
+              <li class="reviews-list-item is-hidden">
+                <img
+                  class="reviews-list-avatar"
+                  src="./images/reviews/olena-kampusch-avatar.png"
+                  alt="Olena Kampusch photo"
+                  width="80"
+                  height="80"
+                />
+                <h3 class="reviews-list-fullname">Olena Kampusch</h3>
+                <p class="reviews-list-text">
+                  Chocolate is a family favourite treat. Love the delicious
+                  smooth chocolate and the creaminess inside. The wafer is soft
+                  but crunchy.
+                </p>
+              </li>
+            </ul>
+            <ul class="slick-dots">
+              <li class="slick-dots-item">
+                <button class="slick-dots-btn is-active" type="button"></button>
+              </li>
+              <li class="slick-dots-item">
+                <button class="slick-dots-btn" type="button"></button>
+              </li>
+              <li class="slick-dots-item">
+                <button class="slick-dots-btn" type="button"></button>
+              </li>
+            </ul>
+          </div>
           <button class="leave-review-btn" type="button">Leave a review</button>
         </div>
-      </section> -->
+      </section>
     </main>
 
-    <!-- <footer class="page-footer">
-      <div class="container">
+    <footer class="page-footer">
+      <div class="container footer-container">
         <div class="page-footer-top-block">
           <h2 class="page-footer-title">
             <span class="accent-color">Chocolate</span>
@@ -511,7 +524,7 @@
         </div>
         <div class="page-footer-bottom-block">
           <nav class="page-navigation">
-            <ul class="menu list">
+            <ul class="menu page-footer-menu">
               <li class="menu-item">
                 <a class="menu-link page-footer-menu-link" href="./index.html"
                   >Home</a
@@ -530,31 +543,27 @@
             </ul>
           </nav>
           <form class="page-footer-subscribe" name="subscribe-form">
-            <label class="subscribe-form-label" for="email"></label>
-            <input
-              class="subscribe-form-input"
-              name="email"
-              type="email"
-              id="email"
-              placeholder="Enter your email"
-            />
+            <label class="subscribe-form-label" for="email"
+              ><input
+                class="subscribe-form-input"
+                name="email"
+                type="email"
+                id="email"
+                placeholder="Enter your email"
+              />
+            </label>
             <button class="subscribe-form-button" type="submit">
               Subscribe
             </button>
           </form>
         </div>
       </div>
-    </footer> -->
+    </footer>
 
-    <!-- <div class="backdrop is-open">
+    <div class="backdrop">
       <div class="review-menu">
         <button class="review-menu-close-button" type="button">
-          <svg
-            class="review-menu-close-icon"
-            width="28"
-            height="28"
-            aria-label="close icon"
-          >
+          <svg class="review-menu-close-icon" aria-label="close icon">
             <use href="./images/icons.svg#icon-close"></use>
           </svg>
         </button>
@@ -575,12 +584,7 @@
                 required
                 autofocus
               />
-              <svg
-                class="review-menu-form-input-icon"
-                width="24"
-                height="24"
-                aria-label="name icon"
-              >
+              <svg class="review-menu-form-input-icon" aria-label="name icon">
                 <use href="./images/icons.svg#icon-user"></use>
               </svg>
             </div>
@@ -595,12 +599,7 @@
                 id="user-email"
                 required
               />
-              <svg
-                class="review-menu-form-input-icon"
-                width="24"
-                height="24"
-                aria-label="email icon"
-              >
+              <svg class="review-menu-form-input-icon" aria-label="email icon">
                 <use href="./images/icons.svg#icon-email"></use>
               </svg>
             </div>
@@ -619,12 +618,7 @@
                 title="xxx-xxx-xx-xx"
                 required
               />
-              <svg
-                class="review-menu-form-input-icon"
-                width="24"
-                height="24"
-                aria-label="phone icon"
-              >
+              <svg class="review-menu-form-input-icon" aria-label="phone icon">
                 <use href="./images/icons.svg#icon-phone"></use>
               </svg>
             </div>
@@ -660,15 +654,76 @@
                   <use href="./images/icons.svg#icon-checkmark"></use>
                 </svg>
               </span>
-              I accept the terms and conditions of the&nbsp;
-              <a class="review-menu-form-checkbox-link" href=""
-                >Privacy Policy</a
-              >
+              <span>
+                I accept the terms and conditions of the
+                <a class="review-menu-form-checkbox-link" href=""
+                  >Privacy Policy</a
+                >
+              </span>
             </label>
           </div>
           <button class="review-menu-form-button" type="submit">Send</button>
         </form>
       </div>
-    </div> -->
+    </div>
+    <div class="mobile-menu">
+      <div class="container mobile-menu-container">
+        <button class="mobile-menu-close-btn" type="button">
+          <svg
+            class="mobile-menu-close-icon"
+            width="28"
+            height="28"
+            aria-label="mobile menu close icon"
+          >
+            <use href="./images/icons.svg#icon-close"></use>
+          </svg>
+        </button>
+        <ul class="mobile-nav-menu">
+          <li class="nav-menu-item">
+            <a class="nav-menu-link" href="./index.html">Home</a>
+          </li>
+          <li class="nav-menu-item">
+            <a class="nav-menu-link" href="#how-made">How it’s made?</a>
+          </li>
+          <li class="nav-menu-item">
+            <a class="nav-menu-link" href="#reviews">Chocolate is loved</a>
+          </li>
+        </ul>
+        <ul class="mobile-social">
+          <li class="mobile-social-item">
+            <a
+              class="mobile-social-item-link"
+              href="https://www.instagram.com/"
+              target="_blank"
+            >
+              <svg
+                class="mobile-social-item-icon"
+                width="22"
+                height="22"
+                aria-label="instagram icon"
+              >
+                <use href="./images/icons.svg#icon-instagram"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="mobile-social-item">
+            <a
+              class="mobile-social-item-link"
+              href="https://twitter.com/"
+              target="_blank"
+            >
+              <svg
+                class="mobile-social-item-icon"
+                width="22"
+                height="22"
+                aria-label="twitter icon"
+              >
+                <use href="./images/icons.svg#icon-twitter"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
   </body>
 </html>
